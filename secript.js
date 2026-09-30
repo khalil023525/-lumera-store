@@ -721,4 +721,18 @@ loadCart();
 
 renderCart();
 
-loadStore();
+loadStore().catch(error => {
+  console.error("FINAL ERROR:", error);
+
+  const grid = document.getElementById("productsGrid");
+
+  if (grid) {
+    grid.innerHTML = `
+      <div class="loading">
+        خطأ:
+        <br>
+        ${escapeHTML(error.message)}
+      </div>
+    `;
+  }
+});
