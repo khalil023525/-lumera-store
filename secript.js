@@ -3,7 +3,7 @@ const SUPABASE_URL = "https://tjtnflfjuthbcckxtwbz.supabase.co";
   ضع هنا Publishable key من Supabase
   لا تضع Secret key
 */
-const SUPABASE_KEY = "ضع_PUBLISHABLE_KEY_هنا";
+const SUPABASE_KEY = "sb_publishable_1XAfDfHKqY8mROQekukN1w_a2symK-B";
 const supabaseClient = window.supabase.createClient(
   SUPABASE_URL,
   SUPABASE_KEY
